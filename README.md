@@ -22,11 +22,11 @@ This repository is a public showcase. The current implementation is maintained p
 
 ```mermaid
 flowchart LR
-    A["NovelPia extension or EPUB"] --> B["Spring Boot API"]
-    B --> C["Background translation jobs"]
+    A["Import"] --> B["Spring Boot API"]
+    B --> C["Translation jobs"]
     C --> D[("PostgreSQL")]
-    B --> E["Web reader and EPUB export"]
     D --> B
+    B --> E["Read or export"]
 ```
 
 **Translation context.** Aura Intelligence maintains a glossary and character information for each novel. When translating a chapter Aura selects relevant names, aliases, and pronoun guidance from intelligence context so recurring terms and characters can stay consistent across chapters.
